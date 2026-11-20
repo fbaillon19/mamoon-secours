@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Remettre l'heure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Remettre l'heure de l'objet</h1>
+  <p class="doux">À suivre avec la personne qui vous a offert l'objet.</p>
+
+  <details id="pile">
+    <summary>Si vous changez la pile</summary>
+    <ol>
+      <li>Débranchez l'objet : retirez le câble de la prise.</li>
+      <li>Retournez le socle avec précaution, la boule tenue par la main.</li>
+      <li>Sous le socle, dévissez la vis de la petite trappe, puis retirez la trappe.</li>
+      <li>Retirez la vieille pile : appuyez avec l'ongle sur la languette à ressort, sur le côté du support.</li>
+      <li>Glissez la pile neuve (une CR2032), le côté marqué « + » tourné vers la trappe.</li>
+      <li>Remettez la trappe et revissez sa vis, sans forcer.</li>
+      <li>Rebranchez l'objet, puis suivez la remise à l'heure ci-dessous.</li>
+    </ol>
+  </details>
+
+  <h2>La remise à l'heure</h2>
+  <div id="message" role="status" aria-live="polite">Un instant…</div>
+  <button id="action" type="button" hidden></button>
+  <button id="reconnecter" type="button" hidden>Reconnecter l'objet</button>
+
+  <div id="diagnostic-zone" hidden>
+    <p class="doux">Si la personne qui vous a offert l'objet le demande, recopiez-lui cette ligne :</p>
+    <textarea id="diagnostic" rows="3" readonly></textarea>
+  </div>
+</main>
+<script type="module" src="remise.mjs"></script>
+</body>
+</html>

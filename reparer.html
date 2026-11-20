@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Réparer l'objet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Réparer l'objet</h1>
+  <p class="doux">À suivre avec la personne qui vous a offert l'objet, quand elle vous le demande.</p>
+
+  <div id="message" role="status" aria-live="polite">Un instant…</div>
+  <progress id="avancement" max="100" value="0" hidden></progress>
+  <button id="action" type="button" hidden></button>
+  <button id="etat" type="button" hidden>Vérifier l'objet</button>
+
+  <div id="diagnostic-zone" hidden>
+    <p class="doux">Si la personne qui vous a offert l'objet le demande, recopiez-lui cette ligne :</p>
+    <textarea id="diagnostic" rows="3" readonly></textarea>
+  </div>
+</main>
+<script type="module" src="reparation.mjs"></script>
+</body>
+</html>
